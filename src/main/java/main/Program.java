@@ -1,6 +1,7 @@
 package main;
 
 import functions.MeanSquaredError;
+import functions.MultiParamGradientDescent;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,9 +21,10 @@ public final class Program
 
     private Program()
     {
-        final List<Double> actual = Arrays.asList(1d, 2d, 3d);
-        runGradientDescent(actual);
-        System.out.println(parameter);
+//        final List<Double> actual = Arrays.asList(1d, 2d, 3d);
+//        runGradientDescent(actual);
+//        System.out.println(parameter);
+        MultiParamGradientDescent.run();
     }
 
     private List<Double> hypothesis(final List<Double> actual)
